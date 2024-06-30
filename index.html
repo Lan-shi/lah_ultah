@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="Assets/cloud.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="title">
+        <div id="happy-birthday">
+            <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> 
+            <span>B</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span>
+        </div>
+        <div id="zeya-haize">
+            <span>Z</span><span>e</span><span>y</span><span>a</span> 
+            <span>H</span><span>a</span><span>i</span><span>z</span><span>e</span>
+        </div>
+    </div>
+    <img id="welcome-character-left" src="Assets/zeya.gif" alt="Welcome Character">
+    <img id="flying-creature" src="Assets/zeya_kuyang.png" alt="Flying Creature">
+    <img id="pop-up-character" src="Assets/ZEYDUT.png" alt="Pop-up Character" style="display: none;">
+    <div id="message-container">
+        <div id="message-line1"></div>
+        <div id="message-line2"></div>
+        <button id="play-audio-button">Click Here</button>
+        <audio id="birthday-audio" src="Assets/voice.mp3"></audio>
+        <div id="loading-indicator" style="display: none;">Playing...</div>
+    </div>
+    <div id="surprise-container" style="display: none;">
+        <div id="surprise-video" class="hidden">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="surprise-message">
+            <div id="surprise-line1" class="typing-container"></div>
+            <div id="surprise-line2" class="typing-container"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
